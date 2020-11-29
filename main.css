@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+}
+
+.icon-box {
+  height: 125px;
+  background: aquamarine;
+  display: grid;
+  place-items: center;
+  font-size: 3em;
+}
+
+.card {
+  /* even card spacing */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* end even card spacing */
+
+  background: skyblue;
+  padding: 1rem;
+  margin: 5px;
+}

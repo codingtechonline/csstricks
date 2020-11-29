@@ -1,0 +1,49 @@
+.container {
+  display: grid;
+  height: 100vh;
+
+  /* pancake layout */
+  grid-template-rows: auto 1fr auto;
+  /* end pancake layout */
+}
+
+header {
+  padding: 1.5rem;
+  color: white;
+  background: navy;
+}
+
+footer {
+  padding: 1.5rem;
+  text-align: center;
+  color: white;
+  background: navy;
+}
+
+.c-span-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.span-grid-text {
+  display: grid;
+  place-items: center;
+}
+
+.span-results {
+  grid-column: 1 / 13;
+  background-color: wheat;
+}
+
+.span-gold {
+  grid-column: 4 / span 6;
+  background-color: gold;
+}
+.span-silver {
+  grid-column: 4 / span 2;
+  background-color: silver;
+}
+.span-bronze {
+  grid-column: 8 / span 2;
+  background-color: #cd7f32;
+}

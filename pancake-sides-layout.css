@@ -1,0 +1,57 @@
+.container {
+  display: grid;
+  height: 100vh;
+
+  /* basic three column layout*/
+  grid-template: auto 1fr auto / auto 1fr auto;
+}
+
+header {
+  background: navy;
+  grid-column: 1 / 4;
+  padding: 1rem;
+  color: white;
+}
+
+.left-sidebar {
+  background: wheat;
+  grid-column: 1 / 2;
+}
+
+main {
+  grid-column: 2 / 3;
+}
+
+.right-sidebar {
+  background: chartreuse;
+  grid-column: 3 / 4;
+}
+
+footer {
+  background: navy;
+  padding: 1rem;
+  text-align: center;
+  grid-column: 1 / 4;
+  color: white;
+}
+
+.left-sidebar,
+.right-sidebar {
+  padding: 2rem;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  /* pancake no stretch */
+  /* flex: 1 1 200px;  */
+  /* end pancake no stretch */
+
+  /* pancake with stretch */
+  flex: 0 1 200px;
+  /* end pancake with stretch */
+}

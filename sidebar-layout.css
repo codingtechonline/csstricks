@@ -1,0 +1,19 @@
+.container {
+  display: grid;
+  /* side bar*/
+  grid-template-columns: minmax(150px, 25%) 1fr;
+  /* end side bar*/
+}
+
+.sidebar {
+  height: 100vh;
+  background-color: cornflowerblue;
+  padding-left: 20px;
+}
+
+.content {
+  display: grid;
+  /* one line center*/
+  place-items: center;
+  /* end one line center*/
+}
