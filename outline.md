@@ -58,7 +58,7 @@ body {
 
 ```html
 <div class="container">
-  <div class="sidebar"><h1>Sidebar (☕️)</h1></div>
+  <aside class="sidebar"><h1>Sidebar (☕️)</h1></aside>
   <div class="content"></div>
 </div>
 ```
